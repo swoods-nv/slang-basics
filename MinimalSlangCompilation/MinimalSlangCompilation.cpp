@@ -15,6 +15,12 @@ int main()
     // (local) session, so we store the options in a SessionDesc
     slang::SessionDesc sessionDesc = {};
 
+    // There are a number of options that can be provided as part of the session description, 
+    // including include/import search paths, one or more compilation targets,
+    // preprocessor macros, and much more. You can find detail on all of these in the
+    // documentation for the compilation API at 
+    // https://docs.shader-slang.org/en/latest/external/slang/docs/user-guide/08-compiling.html
+
     // Set our compile target as SPIR-V 1.5
     slang::TargetDesc targetDesc = {};
     targetDesc.format = SLANG_SPIRV;
