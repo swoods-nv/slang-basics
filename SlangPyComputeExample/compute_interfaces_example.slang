@@ -16,7 +16,7 @@ struct MultiplyByTwo<T : IArithmetic> : IOperation<T>
 struct Add<T : __BuiltinArithmeticType> : IOperation<T>
 {
     T value;
-    T process(T input) { return input + T(10); }
+    T process(T input) { return input + value; }
 }
 
 // Generic buffer processor
